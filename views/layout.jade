@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/normalize.css')
+        link(rel='stylesheet', href='/stylesheets/skeleton.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        block content
+    script(src="http://code.jquery.com/jquery-3.1.1.min.js", integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=", crossorigin="anonymous")
+    script(async, defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVvyroXIyr0jtUpKNNmLria4Bv2EOTyDo&callback=initMap")
+    //- script(src="/node_modules/howler/src/howler.core.js")
+    script(src='/javascripts/map.js')
+    
